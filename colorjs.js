@@ -22,71 +22,78 @@ let s9 = document.getElementById("s9");
 let c10 = document.getElementById("b10");
 let s10 = document.getElementById("s10");
 
-//let chosenc1 = c1.style.backgroundColor;
-const colorArray = [c1];
+let magicBox = document.getElementById("myColor");
+//magicBox.style.visibility = "hidden";
 
+const colorArray = [c1];
+let noneVis = function(){
+    magicBox.style.visibility = "";
+};
 
 let fff = function chooseColor(event){
-
-    alert(event.target.id);
+    //noneVis();
+    //alert(event.target.id);
+    let xxx = document.getElementById("myColor").value;
     if (event.target.id==="b1"){
         c1.style.backgroundColor = promptValue();
-        s1.innerText = c1.style.backgroundColor;
+        s1.innerText = xxx;
 
         return;
     }
     if (event.target.id==="b2"){
         c2.style.backgroundColor = promptValue();
-        s2.innerText = c2.style.backgroundColor;
+        s2.innerText = xxx;
         return;
     }
     if (event.target.id==="b3"){
         c3.style.backgroundColor = promptValue();
-        s3.innerText = c3.style.backgroundColor;
+        s3.innerText = xxx;
         return;
     }
     if (event.target.id==="b4"){
         c4.style.backgroundColor = promptValue();
-        s4.innerText = c4.style.backgroundColor;
+        s4.innerText = xxx;
         return;
     }
     if (event.target.id==="b5"){
         c5.style.backgroundColor = promptValue();
-        s5.innerText = c5.style.backgroundColor;
+        s5.innerText = xxx;
         return;
     }
     if (event.target.id==="b6"){
         c6.style.backgroundColor = promptValue();
-        s6.innerText = c6.style.backgroundColor;
+        s6.innerText = xxx;
         return;
     }
     if (event.target.id==="b7"){
         c7.style.backgroundColor = promptValue();
-        s7.innerText = c7.style.backgroundColor;
+        s7.innerText = xxx;
         return;
     }
     if (event.target.id==="b8"){
         c8.style.backgroundColor = promptValue();
-        s8.innerText = c8.style.backgroundColor;
+        s8.innerText = xxx;
         return;
     }
     if (event.target.id==="b9"){
         c9.style.backgroundColor = promptValue();
-        s9.innerText = c9.style.backgroundColor;
+        s9.innerText = xxx;
         return;
     }
     if (event.target.id==="b10"){
         c10.style.backgroundColor = promptValue();
-        s10.innerText = c10.style.backgroundColor;
+        s10.innerText = xxx;
         return;
     }
-
     console.log(event.target.nodeName);
 
 };
 
 let promptValue = function(){
-    let vv = prompt("enter hex color value : ");
+    //magicBox.style.visibility = "";
+    let xx = document.getElementById("myColor").value;
+    //let str = xx;
+    let vv = prompt("enter hex color value : ",xx);
     return  vv.toString();
 };
 
