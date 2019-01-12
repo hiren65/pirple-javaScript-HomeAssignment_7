@@ -25,7 +25,8 @@ let s10 = document.getElementById("s10");
 let magicBox = document.getElementById("myColor");
 //magicBox.style.visibility = "hidden";
 
-const colorArray = [c1];
+const colorArray = [c1.id,c2.id,c3.id,c4.id,c5.id,c6.id,c7.id,c8.id,c9.id,c10.id];
+console.log( "Here are the rectangle IDs ",colorArray);
 let noneVis = function(){
     magicBox.style.visibility = "";
 };

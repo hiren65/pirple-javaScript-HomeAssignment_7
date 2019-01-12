@@ -1,10 +1,11 @@
 
 html{
   display: block;
-  margin-left: auto;
-  width: 810px;
+
+  width: 800px;
   border: 1px black solid;
-  margin: auto;
+  margin-left: auto;
+    margin-right: auto;
 }
 h1{
     text-align: center;
@@ -12,31 +13,36 @@ h1{
 
 .rectangleWrapper {
         display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 150px 150px 150px 150px 150px;
-        grid-template-rows: 150px 150px 150px;
+        grid-gap: 50px 50px ;
+
+        grid-template-columns: 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px ;
         background-color: #fff;
         color: #444;
         text-align: center;
         position: relative;
-        margin-left: auto;
+        margin-left: 40px;
+        margin-right: auto;
+
 
     }
+.title{
+    padding: 30px;
+}
 
     .box {
         background-color: #444;
         color: #fff;
         border-radius: 5px;
         text-align: center;
-
-
-        font-size: 150%;
+        cursor: pointer;
+        font-size: 100%;
         border: black solid 1px;
-
-
     }
+
     .title{
         grid-column: 1/6;
+        font-size: 130%;
     }
     #b1{
         background-color: #FCCD20;
@@ -69,10 +75,11 @@ h1{
     }
     #b8{
         background-color: #0093FF;
+
         position: relative;
     }
     #b9{
-        background-color: #2300FF;
+        background-color: #BB00FF;
         position: relative;
     }
     #b10{
@@ -97,11 +104,19 @@ h1{
     }
     #colorBox{
         position: relative;
+        height: 150px;
+        top: -50px;
     }
     #msge{
         color: darkgreen;
-        margin-left: 30%;
+        margin-left: 15%;
         top: 25px;
         font-size: 23px;
+    }
+    #info{
+        //position: relative;
+        margin-left: 10px;
+        display: block;
+        top: 70px;
     }
 
