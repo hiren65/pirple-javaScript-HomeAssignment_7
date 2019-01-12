@@ -59,6 +59,26 @@ h1{
         background-color: #78FF00;
         position: relative;
     }
+    #b6{
+        background-color: #00F3FF;
+        position: relative;
+    }
+    #b7{
+        background-color: #EAEAEA;
+        position: relative;
+    }
+    #b8{
+        background-color: #0093FF;
+        position: relative;
+    }
+    #b9{
+        background-color: #2300FF;
+        position: relative;
+    }
+    #b10{
+        background-color: #83A895;
+        position: relative;
+    }
 
     span{
         position: absolute;
