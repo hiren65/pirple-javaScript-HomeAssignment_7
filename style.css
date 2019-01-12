@@ -37,6 +37,7 @@ h1{
         text-align: center;
         cursor: pointer;
         font-size: 100%;
+        font-weight:bold ;
         border: black solid 1px;
     }
 

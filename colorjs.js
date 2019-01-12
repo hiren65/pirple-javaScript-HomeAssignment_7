@@ -23,6 +23,7 @@ let c10 = document.getElementById("b10");
 let s10 = document.getElementById("s10");
 
 let magicBox = document.getElementById("myColor");
+magicBox.value = "#FFB4DD";
 //magicBox.style.visibility = "hidden";
 
 const colorArray = [c1.id,c2.id,c3.id,c4.id,c5.id,c6.id,c7.id,c8.id,c9.id,c10.id];
@@ -35,6 +36,7 @@ let fff = function chooseColor(event){
     //noneVis();
     //alert(event.target.id);
     let xxx = document.getElementById("myColor").value;
+        xxx = xxx.toUpperCase();
     if (event.target.id==="b1"){
         c1.style.backgroundColor = promptValue();
         s1.innerText = xxx;
